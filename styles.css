@@ -1,0 +1,116 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+#box {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 225fr, repeat(2, 259fr), 257fr;
+    grid-template-areas:
+    "one one one one"
+    "two four four five"
+    "three four four five"
+    "six six six five";
+}
+#block_1{
+    background-color: #c6d9f1;
+    grid-area: one;
+}
+#block_2{
+    background-color: #fde9d9;
+    grid-area: two;
+}
+#block_3{
+    background-color: #eaf1dd;
+    grid-area: three;
+}
+#block_4{ 
+    grid-area: four;
+    font-size: 20px;
+}
+#block_5{
+    background-color: #fde9d9;
+    grid-area: five;
+    font-size: 20px;
+    text-align: justify;
+}
+#block_6{
+    background-color: #c6d9f1;
+    grid-area: six;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    align-items: center;
+}
+#block_2 ul, #block_3 ul {
+    padding-top: 20px;
+    padding-left: 10px;
+    list-style-type: square;
+    list-style-position: inside;
+    font-size: 20px;
+}
+#block_4 ol{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    margin-left: 20px;
+}
+#block_4 li{
+    margin: 15px;
+}
+#menu{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 2fr;
+    width: 100%;
+    gap: 2%;
+}
+#item_1, #item_2, #item_3, #item_4, #item_5{
+    border: 1px solid red;
+    border-radius: 25%;
+    text-align: center;
+    width: auto;
+    vertical-align: middle;
+    font-size: 20px;
+    padding: 20% 20% 20% 0;
+    margin: 20% 0;
+}
+#sec_1{
+    border: 1px solid black;
+    text-align: center;
+    width: auto;
+    vertical-align: middle;
+    font-size: 16px;
+    margin: 15% 15% 20% 5%;
+    background-color: white;
+}
+a:link, header a:visited{
+    text-decoration: none;
+}
+a:hover, a:active{
+    color:#FFA500;
+}
+p{
+    margin: 20px;
+}
+ #it_2, #it_3, #it_4
+{
+    border: 1px solid blue;
+    border-radius: 15%;
+    text-align: center;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    font-size: 20px;
+    padding: 10% 0;
+    margin: 0 20%;
+    background-color: #7CFC00;
+}
+#it_1{
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    max-height: auto;
+    vertical-align: middle;
+    font-size: 20px;
+    padding: 10% 0;
+    margin-left: 10%;
+    background-color: white;
+}
